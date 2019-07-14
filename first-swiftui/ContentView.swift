@@ -28,6 +28,15 @@ struct ContentView : View {
     }
 }
 
+struct CircleImage : View {
+    var body: some View{
+        Image("yoshitetsu_")
+        .clipShape(Circle())
+        .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+        .shadow(radius: 10)
+    }
+}
+
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
