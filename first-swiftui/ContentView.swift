@@ -7,9 +7,13 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView : View {
     var body: some View {
+        VStack{
+            Map().frame(height: 300)
+        
         VStack(alignment: .leading){
         Text("VStack")
             .font(.title)
@@ -23,8 +27,9 @@ struct ContentView : View {
                 Text("VStack in HStack")
                     .font(.subheadline)
                     .color(.red)
-            }
-        }.padding(75)
+                }
+            }.padding(75)
+        }
     }
 }
 
@@ -34,6 +39,20 @@ struct CircleImage : View {
         .clipShape(Circle())
         .overlay(Circle().stroke(Color.gray, lineWidth: 4))
         .shadow(radius: 10)
+    }
+}
+
+struct Map : UIViewRepresentable {
+    func makeUIView(context: Context) -> MKMapView {
+        MKMapView(frame: .zero)
+    }
+    
+    func updateUIView(_ view: MKMapView, context: Context) {
+        let coordinate = CLLocationCoordinate2D(
+            latitude: 34.011286, longitude: -116.166868)
+        let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        view.setRegion(region, animated: true)
     }
 }
 
