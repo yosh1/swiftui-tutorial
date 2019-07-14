@@ -17,19 +17,29 @@ struct ContentView : View {
                 .offset(y: -130)
                 .padding(.bottom, -130)
         VStack(alignment: .leading){
-        Text("VStack")
+        Text("yoshi")
             .font(.title)
             .color(.blue)
+            .padding(.bottom, 10)
 
             HStack{
-                Text("VStack in HStack")
+                Text("Engineer")
                     .font(.subheadline)
                     .color(.red)
                 Spacer()
-                Text("VStack in HStack")
+                Text("Node.js / Python / Docker")
                     .font(.subheadline)
                     .color(.red)
                 }
+            HStack{
+                Text("Designer")
+                    .font(.subheadline)
+                    .color(.red)
+                Spacer()
+                Text("Sketch / Figma / XD")
+                    .font(.subheadline)
+                    .color(.red)
+            }
             }.padding()
             Spacer()
         }
