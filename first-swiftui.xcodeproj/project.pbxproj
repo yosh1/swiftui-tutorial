@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5147FF6522DAFBD800C8393E /* yoshitetsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5147FF6422DAFBD800C8393E /* yoshitetsu.png */; };
+		5147FF6722DAFD3200C8393E /* yoshitetsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5147FF6622DAFD3200C8393E /* yoshitetsu.png */; };
 		518C122922DAD11800FBCFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518C122822DAD11800FBCFE0 /* AppDelegate.swift */; };
 		518C122B22DAD11800FBCFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518C122A22DAD11800FBCFE0 /* SceneDelegate.swift */; };
 		518C122D22DAD11800FBCFE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518C122C22DAD11800FBCFE0 /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5147FF6422DAFBD800C8393E /* yoshitetsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoshitetsu.png; sourceTree = "<group>"; };
+		5147FF6622DAFD3200C8393E /* yoshitetsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yoshitetsu.png; path = Assets.xcassets/yoshitetsu.png; sourceTree = "<group>"; };
 		518C122522DAD11800FBCFE0 /* first-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "first-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518C122822DAD11800FBCFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518C122A22DAD11800FBCFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +83,10 @@
 		518C122722DAD11800FBCFE0 /* first-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				5147FF6422DAFBD800C8393E /* yoshitetsu.png */,
 				518C122822DAD11800FBCFE0 /* AppDelegate.swift */,
 				518C122A22DAD11800FBCFE0 /* SceneDelegate.swift */,
+				5147FF6622DAFD3200C8393E /* yoshitetsu.png */,
 				518C122C22DAD11800FBCFE0 /* ContentView.swift */,
 				518C122E22DAD11B00FBCFE0 /* Assets.xcassets */,
 				518C123322DAD11B00FBCFE0 /* LaunchScreen.storyboard */,
@@ -190,6 +196,8 @@
 			files = (
 				518C123522DAD11B00FBCFE0 /* LaunchScreen.storyboard in Resources */,
 				518C123222DAD11B00FBCFE0 /* Preview Assets.xcassets in Resources */,
+				5147FF6522DAFBD800C8393E /* yoshitetsu.png in Resources */,
+				5147FF6722DAFD3200C8393E /* yoshitetsu.png in Resources */,
 				518C122F22DAD11B00FBCFE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

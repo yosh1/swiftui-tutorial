@@ -13,7 +13,9 @@ struct ContentView : View {
     var body: some View {
         VStack{
             Map().frame(height: 300)
-        
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
         VStack(alignment: .leading){
         Text("VStack")
             .font(.title)
@@ -28,14 +30,16 @@ struct ContentView : View {
                     .font(.subheadline)
                     .color(.red)
                 }
-            }.padding(75)
+            }.padding()
+            Spacer()
         }
     }
 }
 
 struct CircleImage : View {
+    let image = "yoshitetsu"
     var body: some View{
-        Image("yoshitetsu_")
+        Image(image)
         .clipShape(Circle())
         .overlay(Circle().stroke(Color.gray, lineWidth: 4))
         .shadow(radius: 10)
