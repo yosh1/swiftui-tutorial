@@ -12,7 +12,7 @@ import MapKit
 struct ContentView : View {
     var body: some View {
         VStack{
-            Map().frame(height: 300)
+            Map().frame(height: 370)
             CircleImage()
                 .offset(y: -130)
                 .padding(.bottom, -130)
@@ -40,7 +40,8 @@ struct ContentView : View {
                     .font(.subheadline)
                     .color(.red)
             }
-            }.padding()
+            }
+            .padding(30)
             Spacer()
         }
     }
